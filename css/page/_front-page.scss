@@ -1,0 +1,181 @@
+.main-visual{
+  background: $color-sub;
+}
+
+.main-visual__text{
+  @media not all and (min-width: 768px){
+    text-align: center;
+    padding-top: 32px;
+  }
+}
+
+.main-visual__catch{
+  font-size: 24px;
+  line-height: 1.5;
+
+  span{
+    color: $color-main;
+    display: block;
+  }
+}
+
+.main-visual__lead{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@include mq('md'){
+  .main-visual__wrapper{
+    display: flex;
+    align-items: center;
+  }
+
+  .main-visual__text{
+    width: 45%;
+  }
+
+  .main-visual__img{
+    width: 55%;
+    height: 350px;
+
+    img{
+      height: 100%;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include mq('lg'){
+  .main-visual__catch{
+    font-size: 36px;
+  }
+
+  .main-visual__img{
+    width: 55%;
+    height: 480px;
+  }
+}
+
+
+.message__area{
+  padding-top: 24px;
+
+  @include mq('sm'){
+    padding-top: 40px;
+  }
+}
+
+.message{
+  background: $color-sub;
+  padding: 16px;
+  margin-top: 16px;
+
+
+  @include mq('lg'){
+    padding: 40px 0;
+    text-align: center;
+  }
+}
+
+.message__text{
+  background: #fff;
+  padding: 16px;
+  border-radius: 24px;
+  max-width: 880px;
+  margin: 0 auto;
+
+  p{
+    margin-bottom: 8px;
+  }
+
+  span{
+    font-weight: bold;
+  }
+}
+
+.flow{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flow__item{
+  background: #fff;
+  padding: 24px 16px;
+  border-radius: 24px;
+  position: relative;
+  margin-bottom: 32px;
+
+  h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  span{
+    color: $color-main;
+    font-weight: bold;
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+    padding-right: 12px;
+  }
+
+  &:not(:last-child):after{
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 23px;
+    height: 14px;
+    background: url(../images/arrow.svg) no-repeat center center/contain;
+  }
+}
+
+.cta{
+  background: $color-main;
+  color: #fff;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.cta__heading{
+  font-size: 20px;
+}
+
+.cta__text{
+  margin-top: 24px;
+  p{
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  span{
+    display: block;
+    font-size: 14px;
+    margin-top: 12px;
+
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+
+.cta__number{
+  font-weight: bold;
+  font-size: 24px;
+  position: relative;
+  padding-left: 36px;
+
+  &:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  display: block;
+  width: 32px;
+  height: 28px;
+  background: url(../images/tel.svg) no-repeat center center/contain;
+  }
+}

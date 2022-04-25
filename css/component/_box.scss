@@ -1,0 +1,81 @@
+.box-problem{
+  box-shadow: 0px 5px 12px #cad4e2, -6px -6px 12px #fff;
+  border-radius: 24px;
+  padding: 24px 16px;
+  margin-bottom: 20px;
+
+  h3{
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  img{
+    margin: 0 auto;
+  }
+}
+
+.box-feature{
+  background: $color-sub;
+  padding: 16px 16px 24px;
+  position: relative;
+  margin-top: 48px;
+  border-radius: 24px;
+
+  h3{
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  img{
+    margin: 0 auto;
+    margin-bottom: 12px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.box-feature__number{
+  position: absolute;
+  z-index: 10;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1;
+  font-size: 32px;
+
+  span{
+    position: relative;
+    color: $color-main;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    line-height: 1;
+
+    &:after{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: $color-main;
+      bottom: 3px;
+      left: 0;
+    }
+  }
+}
+
+@include mq('md'){
+  .box{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box-problem{
+    width: 30%;
+  }
+
+  .box-feature{
+    width: 30%;
+  }
+}
