@@ -28,6 +28,7 @@
 .l-footer__menu{
   color: #dfdfdf;
   font-size: 14px;
+  text-shadow: 0 0 20px rgba(0,0,0);
 }
 
 
@@ -56,10 +57,7 @@
     padding: 64px 0 32px;
   }
 
-  .l-footer__content{
-    display: flex;
-    justify-content: space-between;
-  }
+
 
   .l-footer__info{
     padding-top: 0;
@@ -74,11 +72,11 @@
   }
 
   .l-footer__menu{
-    padding-top: 0;
+    padding-top: 24px;
     display: flex;
 
     li{
-      padding-left: 28px;
+      padding-right: 28px;
       font-size: 14px;
     }
   }
