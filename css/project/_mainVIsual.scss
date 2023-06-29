@@ -1,0 +1,62 @@
+@use "../setting/setting";
+
+.p-mainVisual{
+  background: url(../images/mv.jpg) no-repeat center center/cover;
+  height: 90vh;
+  position: relative;
+}
+
+.p-mainVisual__text{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: setting.$font-en;
+  letter-spacing: 4px;
+  max-width: 1200px;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin: 0 auto;
+
+  span{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px){
+
+  .p-mainVisual__text{
+    margin-left: 24px;
+
+    span{
+      font-size: 42px;
+    }
+    
+    h1{
+      font-size: 48px;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+
+  .p-mainVisual__text{
+    margin-left: 40px;
+
+    span{
+      font-size: 58px;
+    }
+    
+    h1{
+      font-size: 58px;
+    }
+  }
+}
+

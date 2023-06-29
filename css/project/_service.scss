@@ -1,0 +1,46 @@
+@use "../setting/setting";
+
+.p-service__item{
+  padding-bottom: 28px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DFDFDF;
+}
+.p-service__heading{
+  margin-bottom: 8px;
+  h3{
+    font-size: 16px;
+  }
+
+  span{
+    font-size: 14px;
+    color: setting.$color-main;
+  }
+}
+
+.p-service__texts{
+  p{
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 1024px){
+  .p-service__items{
+    margin-top: 48px;
+  }
+
+  .p-service__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+  }
+
+  .p-service__heading{
+    width: 28%;
+  }
+
+  .p-service__texts{
+    width: 71%;
+  }
+}

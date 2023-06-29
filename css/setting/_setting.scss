@@ -36,27 +36,22 @@ $breakpoints: (
 /*================================
 	色設定
 =================================*/
-$color-main: #FF7807;
-$color-sub: #FFF9E1;
-$color-bg: #FBFAF7;
-$color-accent: #46c4db;
-$color-button: #337ab7;
+$color-main: #AAAAAA;
+$color-sub: #f0f9f7;
+$color-accent: #FFDB00;
+$color-accent2: #EC2929;
+$color-link: #337ab7;
 
 /*================================
 	全体共通
 =================================*/
+$font-en: 'Lato', sans-serif;
+
 body{
-  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif; 
+  font-family:  "Noto Sans", "Noto Sans CJK JP", "Noto Sans CJK JP Subset", "Yu Gothic Medium", "游ゴシック Medium", "Yu Gothic", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo";
   font-weight: 500;
   color: #333;
   line-height: 1.75;
-}
-
-.inner{
-  max-width: 1200px;
-  padding-right: 6%;
-  padding-left: 6%;
-  margin: 0 auto;
 }
 
 a{

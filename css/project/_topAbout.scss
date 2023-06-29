@@ -1,0 +1,63 @@
+@use "../setting/setting";
+
+.p-topAbout{
+  padding: 52px 0 64px;
+}
+
+.p-topAbout__body{
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.p-topAbout__lead{
+    padding: 60px 0 32px;
+    position: relative;
+    overflow: hidden;
+
+
+  h3{
+    font-size: 28px;
+    text-align: center;
+  }
+
+  span{
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: rgba(178,178,178,.2);
+    font-size: 120px;
+    letter-spacing: .05em;
+    line-height: 1;
+    font-family: "Cinzel",serif;
+    text-transform: uppercase;
+
+    @media (min-width: 1024px){
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.p-topAbout__text{
+  font-size: 14px;
+  line-height: 2.2;
+}
+
+@media (min-width: 1024px){
+  .p-topAbout__body{
+    margin-top: 40px;
+  }
+
+  .p-topAbout__lead{
+    overflow: visible;
+
+  h3{
+    font-size: 40px;
+  }
+
+}
+
+.p-topAbout__text{
+  line-height: 2.5;
+}
+}

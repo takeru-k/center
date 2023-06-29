@@ -1,0 +1,50 @@
+@use "../setting/setting";
+
+.c-contact{
+  background: url(../images/contact.jpg) no-repeat center center/cover;
+  padding: 40px 6%;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0,0,0);
+}
+
+.c-contact__heading{
+
+  span{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: setting.$font-en;
+    letter-spacing: 2px;
+  }
+
+  h2{
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: normal;
+  }
+}
+
+.c-contact__text{
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  line-height: 2.2;
+}
+
+@media not all and (min-width: 1024px){
+  .pcbr{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .c-contact{
+    padding: 60px 6%;
+  }
+
+  .c-contact__heading2{
+    span{
+      font-size: 34px;
+    }
+  }
+}

@@ -1,93 +1,49 @@
-.section{
-  padding: 48px 0;
-
-  @include mq('sm'){
-    padding-bottom: 64px;
-  }
-
-  @include mq('lg'){
-    padding: 64px 0;
-  }
+@use "../setting/setting";
+.c-section{
+  padding: 40px 0;
 }
 
-.section + .section{
-  padding-top: 0;
-}
 
-.section-bg{
-  padding: 48px 0;
-  background: $color-bg;
-}
+.c-section__contents{
+  h2{
+    position: relative;
+    font-size: 18px;
+    font-family: "Noto Serif JP",serif;
 
-.section__heading{
-  font-size: 20px;
-
-  span{
-    color: $color-main;
-  }
-
-  @include mq('sm'){
-    text-align: center;
-  }
-
-  @include mq('lg'){
-    font-size: 28px;
-  }
-
-  @media not all and (min-width: 640px){
-    br{
-      display: none;
+    &:after{
+      content: '';
+      height: 1px;
+      width: 20%;
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+      background: #000;
     }
-  }
+  }  
 }
 
-.section__title{
-  font-size: 20px;
+.c-section__body{
   position: relative;
-  text-align: center;
-  padding-bottom: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
 
-  span{
-    color: $color-main;
-  }
+.c-section__contents{
+  margin-left: 52px;
+}
 
-  &:before{
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    z-index: 1;
-    right: 0;
-    left: 0;
-    width: 80px;
-    margin: 0 auto;
-    background: $color-main;
-  }
+.c-section__texts{
+  margin-top: 40px;
 
-  &:after{
-    z-index: 2;
-    right: 0;
-    left: 40px;
-    width: 40px;
-    margin: 0 auto;
-    background: #000;
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-  }
-
-  @include mq('lg'){
-    font-size: 32px;
+  p{
+    font-size: 14px;
+    line-height: 2.2;
+    margin-bottom: 16px;
   }
 }
 
-.section__contents{
-  padding-top: 24px;
-
-  @include mq('lg'){
-    padding-top: 32px;
+@media (min-width: 1024px){
+  .c-section{
+    padding: 64px 0;
   }
 }

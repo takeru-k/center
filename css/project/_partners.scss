@@ -1,0 +1,57 @@
+@use "../setting/setting";
+.p-partner__items{
+  margin-top: 16px;
+}
+
+.p-partner__box{
+  background: #F4F4F4;
+  padding: 16px;
+  border: 1px solid #DFDFDF;
+
+  h3{
+    font-family: setting.$font-en;
+  }
+
+  p{
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  a{
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 12px;
+    display: inline-block;
+    position: relative;
+    padding-right: 18px;
+
+    &:after{
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: url(../images/link.png) no-repeat center
+        center/contain;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &:first-child{
+    margin-bottom: 16px;
+
+    @media (min-width: 768px){
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .p-partner__items{
+  margin-top: 40px;
+}
+  .p-partner__box{
+    padding: 40px;
+  }
+}
